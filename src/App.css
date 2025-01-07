@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,7 +12,7 @@ body {
   height: 100vh;
   justify-content: center; /* Centers the container horizontally */
   align-items: center; /* Centers the container vertically */
-  margin-right:500px;
+  margin-right: 500px;
 }
 
 .login-container {
@@ -41,9 +42,11 @@ body {
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
 }
-.login-left h2{
+
+.login-left h2 {
   color: #6f8f5c;
 }
+
 .carousel-heading {
   margin-top: 10px; /* Adds spacing between the image and heading */
   font-size: 18px;
@@ -74,7 +77,6 @@ a {
 }
 
 .login-right h5 {
-  
   margin-right: 35px;
   margin-left: 35px;
 }
@@ -108,4 +110,53 @@ a {
 
 .signup-btn:hover {
   background-color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column; /* Stack the sections vertically */
+    margin-right: 0; /* Remove excess margin */
+  }
+
+  .login-container {
+    flex-direction: column; /* Stack sections inside container */
+    width: 95%; /* Reduce width for smaller screens */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%; /* Ensure full width for both sections */
+  }
+
+  .login-left {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .login-image {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .carousel-heading {
+    font-size: 16px; /* Adjust heading size for smaller screens */
+  }
+
+  .login-right h1 {
+    font-size: 24px; /* Adjust heading font size */
+  }
+
+  .login-btn,
+  .signup-btn {
+    width: 90%; /* Reduce button width */
+    font-size: 14px; /* Adjust font size */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .login-right h5 {
+    font-size: 12px; /* Adjust terms text size */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
