@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('./images/All-About-Recycling.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire screen */
+  height: 100vh;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+  justify-content: center; /* Centers the container horizontally */
+  align-items: center; /* Centers the container vertically */
+  margin-right:500px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row; /* Keep the left and right sections side by side */
+  width: 80%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better contrast */
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Stack image and heading vertically */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.login-image {
+  max-width: 90%; /* Ensures the image is properly sized */
+  max-height: 80%;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+.login-left h2{
+  color: #6f8f5c;
+}
+.carousel-heading {
+  margin-top: 10px; /* Adds spacing between the image and heading */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #333; /* Adjust color if needed */
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-right h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(138, 204, 138);
+}
+
+.login-right h5,
+a {
+  font-family: 'Times New Roman', Times, serif;
+  color: #8ddc60;
+  text-align: center; /* Ensure proper alignment */
+}
+
+.login-right h5 {
+  
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+.login-btn,
+.signup-btn {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn {
+  background-color: #8ec88d;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #9adb99;
+}
+
+.signup-btn {
+  background-color: #9cbe9e;
+  color: #ecf5ec;
+}
+
+.signup-btn:hover {
+  background-color: #bbb;
+}
